@@ -1,0 +1,101 @@
+// ==========================================================================
+// Weblance – Personal Portfolio Theme
+// Main stylesheet entry point
+// ==========================================================================
+
+@use 'cursor';
+@use 'variables';
+@use 'mixins';
+@use 'base';
+@use 'header';
+@use 'hero';
+@use 'project';
+@use 'about';
+@use 'services';
+@use 'experience';
+@use 'achievements';
+@use 'contact';
+@use 'si-project-p';
+@use 'footer1';
+@use 'skill1';
+
+
+
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ============================================
+// GLOBAL WEBSITE BACKGROUND GRID
+// ============================================
+
+body {
+  --grid-bg: #030303;
+  --grid-line: rgba(37, 29, 29, 0.479);
+  --grid-glow-green: rgba(0, 185, 120, 0.035);
+  --grid-glow-orange: rgba(255, 121, 0, 0.03);
+
+  position: relative;
+  isolation: isolate;
+
+  background-color: var(--grid-bg);
+
+  // Keep the grid behind the entire website
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    pointer-events: none;
+
+    background-image:
+      linear-gradient(
+        var(--grid-line) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        90deg,
+        var(--grid-line) 1px,
+        transparent 1px
+      ),
+      radial-gradient(
+        ellipse at 15% 20%,
+        var(--grid-glow-green),
+        transparent 45%
+      ),
+      radial-gradient(
+        ellipse at 85% 70%,
+        var(--grid-glow-orange),
+        transparent 45%
+      );
+
+    background-size:
+      28px 28px,
+      28px 28px,
+      100% 100%,
+      100% 100%;
+
+    background-position: center;
+  }
+}
+
+// ============================================
+// LIGHT MODE
+// Works with html[data-theme="light"]
+// ============================================
+
+html[data-theme="light"] body {
+  --grid-bg: #f5f6f8;
+  --grid-line: rgba(20, 30, 45, 0.055);
+  --grid-glow-green: rgba(0, 185, 120, 0.025);
+  --grid-glow-orange: rgba(255, 121, 0, 0.025);
+}
+
+// Optional: body.light-mode support
+body.light-mode {
+  --grid-bg: #f5f6f8;
+  --grid-line: rgba(11, 15, 22, 0.055);
+  --grid-glow-green: rgba(0, 185, 120, 0.025);
+  --grid-glow-orange: rgba(255, 121, 0, 0.025);
+}

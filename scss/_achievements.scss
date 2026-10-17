@@ -1,0 +1,112 @@
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// =========================================
+// ACHIEVEMENTS
+// =========================================
+
+// .achievements {
+//   @include section-pad;
+//   padding-bottom: 60px;
+//   text-align: center;
+
+//   h2 {
+//     color: var(--heading-color);
+//   }
+
+//   .awards-grid {
+//     @include flex(center, center, 18px, wrap);
+//     max-width: 900px;
+//     margin: 0 auto;
+//   }
+
+//   .award-card {
+//     @include flex(flex-start, center, 14px);
+//     background: var(--card-bg);
+//     border: 1px solid var(--border-color);
+//     border-radius: $radius-pill;
+//     padding: 12px 26px 12px 12px;
+
+//     .year {
+//       width: 50px;
+//       height: 50px;
+//       border-radius: 50%;
+//       background: var(--icon-bg);
+//       border: 1px solid var(--border-color);
+//       color: $color-primary;
+//       font-size: 12px;
+//       font-weight: 700;
+//       @include flex(center, center);
+//       flex-direction: column;
+//       position: relative;
+
+//       &::before,
+//       &::after {
+//         display: none;
+//       }
+//     }
+
+//     h4 {
+//       font-size: 14.5px;
+//       text-align: left;
+//       max-width: 150px;
+//       color: var(--heading-color);
+//     }
+//   }
+// }
+
+
+// =========================================
+// MARQUEE BAND
+// =========================================
+
+.marquee-band {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+
+  .marquee-row {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 16px 0;
+
+    &.row-orange {
+      background: $grad-primary;
+      transform: rotate(-4deg) scale(1.03);
+      margin-bottom: -71px;
+    }
+
+    &.row-dark {
+      background: #000;
+      transform: rotate(5deg) scale(1.03);
+    }
+  }
+
+  .marquee-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    animation: marquee 22s linear infinite;
+    padding: 5px 0;
+
+    span {
+      @include flex(center, center, 10px);
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+  
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}

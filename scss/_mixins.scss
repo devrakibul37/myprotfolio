@@ -1,0 +1,111 @@
+@use 'variables' as *;
+
+@mixin flex($justify: flex-start, $align: stretch, $gap: 0, $wrap: nowrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  @if $gap != 0 { gap: $gap; }
+}
+
+@mixin mq($bp) {
+  @if $bp == sm { @media (max-width: $bp-sm) { @content; } }
+  @if $bp == md { @media (max-width: $bp-md) { @content; } }
+  @if $bp == lg { @media (max-width: $bp-lg) { @content; } }
+  @if $bp == xl { @media (max-width: $bp-xl) { @content; } }
+}
+
+@mixin badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px 7px 10px;
+  background: var(--bt-bg-color);
+  border: 1px solid var(--bt-br-color);
+  border-radius: $radius-pill;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--bt-t-col);
+
+  &::before {
+    content: '\2731';
+    color: $color-primary;
+    font-size: 13px;
+  }
+}
+
+@mixin btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: $grad-primary;
+  color: $color-white;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 10px 13px 24px;
+  border-radius: $radius-pill;
+  border: none;
+  cursor: pointer;
+  transition: $transition;
+  box-shadow: $shadow-btn;
+
+  .icon-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    @include flex(center, center);
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+  }
+}
+
+@mixin section-pad {
+  // padding: 80px 0;
+  @include mq(md) { padding: 60px 0; }
+}
+
+@mixin section-pad {
+  padding: 80px 0;
+
+  // Tablet
+  @include mq(md) {
+    padding: 60px 0;
+  }
+
+  // Mobile
+  @include mq(sm) {
+    padding: 40px 0;
+  }
+}
+
+
+
+
+@mixin card-panel {
+  background: linear-gradient(180deg, #161616 0%, #0e0e0e 100%);
+  border-radius: $radius-lg;
+  border: 1px solid $color-border-soft;
+}
+
+
+
+/* =====================================
+   CUSTOM TEXT SELECTION COLOR
+===================================== */
+
+::selection {
+  background-color: #ff5300; // Selected text background
+  color: #ffffff;            // Selected text color
+}
+
+/* Firefox Support */
+::-moz-selection {
+  background-color: #ff5300;
+  color: #ffffff;
+}
+

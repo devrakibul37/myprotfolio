@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="bubble-cursor-trail"></div>
+    <div class="custom-cursor"><span class="cursor-char"></span></div>
+
+    <!-- ============================= HEADER ============================= -->
+
+
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+
+                <!-- Logo -->
+                <a href="/index.html" class="logo">
+                    <span class="logo-mark">
+                        <img src="/images/logo.png" alt="">
+                    </span>
+                </a>
+
+                <!-- Main Navigation -->
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About Us</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#Skill">Skill</a>
+                    <a href="index.html#project">Project</a>
+                    <a href="index.html#contact">Contact Us</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+
+                    <!-- Dark / Light Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fa-solid fa-sun light-icon"></i>
+                        <i class="fa-solid fa-moon dark-icon"></i>
+                    </button>
+
+                    <!-- Contact Button -->
+                    <a href="#contact" class="btn-header">
+                        RESUME
+                        <span class="icon-circle">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+
+                    <!-- Mobile Menu -->
+                    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+
+        <div class="mobile-nav-top">
+
+            <a href="#" class="logo">
+                <img src="/images/logo.png" alt="">
+            </a>
+
+            <button class="close-btn" id="navClose" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#Skill">Skill</a></li>
+            <li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+
+        <a href="#contact" class="btn-primary">
+            Contact Us
+            <span class="icon-circle">
+                <i class="fa-solid fa-arrow-right"></i>
+            </span>
+        </a>
+
+    </div>
+
+    <!-- ============================= project ============================= -->
+
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper">
+
+                <!-- Left Sidebar (Sticky Side) -->
+                <aside class="project-sidebar">
+
+                    <!-- Project Info Card -->
+                    <div class="sidebar-card project-info-card">
+                        <div class="card-header">
+                            <h3>Project Information</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="info-list">
+                                <li>
+                                    <div class="icon-box"><i class="fa-regular fa-folder-open"></i></div>
+                                    <div class="info-text">
+                                        <span>Project Name</span>
+                                        <strong>Nova design studio</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-box"><i class="fa-solid fa-layer-group"></i></div>
+                                    <div class="info-text">
+                                        <span>Category</span>
+                                        <strong>UI/UX Design</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-box"><i class="fa-regular fa-user"></i></div>
+                                    <div class="info-text">
+                                        <span>Clients</span>
+                                        <strong>Josefin H. Smith</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-box"><i class="fa-regular fa-calendar-days"></i></div>
+                                    <div class="info-text">
+                                        <span>Date & time settings</span>
+                                        <strong>25 January, 2026</strong>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-box"><i class="fa-regular fa-clock"></i></div>
+                                    <div class="info-text">
+                                        <span>Duration</span>
+                                        <strong>6 months from today</strong>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="share-box">
+                                <span>Share:</span>
+                                <div class="social-links">
+                                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weblance CTA Card -->
+                    <div class="sidebar-card cta-card">
+                        <div class="brand-logo">
+                            <span class="logo-mark"><i class="fa-solid fa-code"></i></span>
+                            <span class="logo-text">Weblance</span>
+                        </div>
+                        <p class="cta-desc">We turn ideas into powerful visuals that connect & deliver real results.</p>
+
+                        <div class="contact-details">
+                            <p><strong>Call Us At :</strong> <a href="tel:+123456789">+1 (123) 456 - 789</a></p>
+                            <p><strong>E-mail :</strong> <a href="mailto:info@domainname.com">info@domainname.com</a>
+                            </p>
+                        </div>
+
+                        <a href="/images/Rakibul Islam.pdf" class="btn-cv">
+                            Download My CV
+                            <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+
+                </aside>
+
+                <!-- Right Main Content Area (Scrollable Side) -->
+                <main class="project-content">
+
+                    <!-- Main Project Image -->
+                    <div class="project-main-image">
+                        <img src="/images/project-1.png" alt="Nova Design Studio Project">
+                    </div>
+
+                    <p class="intro-paragraph">
+                        The Nova Design Studio project focused on building a visually striking and modern website that
+                        reflects creativity, innovation, and professionalism. The goal was to create a strong digital
+                        identity for the studio while ensuring a seamless and engaging user experience.
+                    </p>
+
+                    <!-- Design Process Section -->
+                    <section class="content-block">
+                        <h2>Design process</h2>
+                        <p class="block-desc">This project focused on creating a modern and user-friendly e-commerce
+                            platform that enhances the overall shopping experience. The goal was to design a visually
+                            appealing interface.</p>
+
+                        <div class="process-grid">
+                            <div class="process-card">
+                                <div class="card-top">
+                                    <span class="step-num">01</span>
+                                    <h4>Research & Analysis</h4>
+                                </div>
+                                <p>Understand target audience & business goals</p>
+                                <ul class="bullet-list">
+                                    <li>Increase user engagement</li>
+                                </ul>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="card-top">
+                                    <span class="step-num">02</span>
+                                    <h4>Wireframing & Plan</h4>
+                                </div>
+                                <p>Creating & mapping layout structures and user flow</p>
+                                <ul class="bullet-list">
+                                    <li>Increase user engagement</li>
+                                </ul>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="card-top">
+                                    <span class="step-num">03</span>
+                                    <h4>UI Design</h4>
+                                </div>
+                                <p>Designing visually engaging and modern interfaces</p>
+                                <ul class="bullet-list">
+                                    <li>Increase user engagement</li>
+                                </ul>
+                            </div>
+
+                            <div class="process-card">
+                                <div class="card-top">
+                                    <span class="step-num">04</span>
+                                    <h4>Development</h4>
+                                </div>
+                                <p>Building responsive and optimized website</p>
+                                <ul class="bullet-list">
+                                    <li>Increase user engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <p class="section-divider-text">
+                        Every project comes with unique challenges that require thoughtful problem-solving and creative
+                        thinking. By identifying key issues early and applying effective solutions.
+                    </p>
+
+                    <!-- Challenges & Solutions Section -->
+                    <div class="challenges-solutions-grid">
+                        <div class="cs-card">
+                            <h3>Challenges</h3>
+                            <p class="sub-text">Every project presents its own set of challenges, from design complexity
+                            </p>
+                            <ul class="cs-list">
+                                <li>Balancing creative design with user-friendly functionality</li>
+                                <li>Managing complex navigation and content structure</li>
+                                <li>Maintaining fast loading speed with heavy visuals</li>
+                                <li>Maintaining fast loading speed with heavy visuals</li>
+                            </ul>
+                        </div>
+
+                        <div class="cs-card">
+                            <h3>Solutions</h3>
+                            <p class="sub-text">Each challenge was addressed with a strategic and thoughtful approach
+                            </p>
+                            <ul class="cs-list">
+                                <li>Implemented clean and user-friendly design structure</li>
+                                <li>Optimized images and assets for faster loading speed</li>
+                                <li>Ensured brand consistency through colors and typography</li>
+                                <li>Applied modern design trends with balanced usability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Accordion Section -->
+                    <section class="content-block faq-section">
+                        <h2>Frequently asked questions</h2>
+
+                        <div class="faq-accordion">
+                            <details class="faq-item">
+                                <summary class="faq-question">
+                                    <span>Q1. Do you work with international clients?</span>
+                                    <span class="icon">+</span>
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>Yes, we work with clients globally using collaborative digital tools for
+                                        communication and workflow management.</p>
+                                </div>
+                            </details>
+
+                            <details class="faq-item" open>
+                                <summary class="faq-question">
+                                    <span>Q2. How long does it take to complete a project?</span>
+                                    <span class="icon">-</span>
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>Project timeline depends on the scope, but most projects are completed within 2-6
+                                        weeks with proper planning and collaboration.</p>
+                                </div>
+                            </details>
+
+                            <details class="faq-item">
+                                <summary class="faq-question">
+                                    <span>Q3. Can I request revisions during the project?</span>
+                                    <span class="icon">+</span>
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>Yes, we offer multiple design revision rounds to make sure the final output
+                                        matches your vision perfectly.</p>
+                                </div>
+                            </details>
+
+                            <details class="faq-item">
+                                <summary class="faq-question">
+                                    <span>Q4. Do you offer support after project completion?</span>
+                                    <span class="icon">+</span>
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>We provide ongoing technical support and maintenance packages post-launch.</p>
+                                </div>
+                            </details>
+
+                            <details class="faq-item">
+                                <summary class="faq-question">
+                                    <span>Q5. Do you provide custom design solutions?</span>
+                                    <span class="icon">+</span>
+                                </summary>
+                                <div class="faq-answer">
+                                    <p>Absolutely, all of our designs are built completely from scratch tailored to your
+                                        brand identity.</p>
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+
+                </main>
+
+            </div>
+        </div>
+    </section>
+
+
+    
+  <!-- ============================= FOOTER ============================= -->
+
+  <!-- SVG sprite (all ids are prefixed with "rkf-" so they never clash) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="rkf-i-zap" viewBox="0 0 24 24">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </symbol>
+      <symbol id="rkf-i-shield" viewBox="0 0 24 24">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="rkf-i-users" viewBox="0 0 24 24">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </symbol>
+      <symbol id="rkf-i-arrow-ur" viewBox="0 0 24 24">
+        <path d="M7 17 17 7" />
+        <path d="M7 7h10v10" />
+      </symbol>
+      <symbol id="rkf-i-arrow-r" viewBox="0 0 24 24">
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+      </symbol>
+      <symbol id="rkf-i-arrow-up" viewBox="0 0 24 24">
+        <path d="M12 19V5" />
+        <path d="m5 12 7-7 7 7" />
+      </symbol>
+      <symbol id="rkf-i-phone" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+      </symbol>
+      <symbol id="rkf-i-mail" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2.5" fill="currentColor" stroke="none" />
+        <path d="m3.5 7.5 8.5 6 8.5-6" stroke="#1a100a" stroke-width="1.6" />
+      </symbol>
+      <symbol id="rkf-i-chat" viewBox="0 0 24 24">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        <path d="M8.5 10h.01M12 10h.01M15.5 10h.01" />
+      </symbol>
+      <symbol id="rkf-i-pin" viewBox="0 0 24 24">
+        <path fill="currentColor" stroke="none"
+          d="M12 1.5a8.5 8.5 0 0 0-8.5 8.5c0 6.6 8.5 13 8.5 13s8.5-6.4 8.5-13A8.5 8.5 0 0 0 12 1.5z" />
+        <circle cx="12" cy="10" r="3" fill="#0a0a0a" stroke="none" />
+      </symbol>
+      <symbol id="rkf-i-expand" viewBox="0 0 24 24">
+        <path d="M15 3h6v6" />
+        <path d="M9 21H3v-6" />
+        <path d="m21 3-7 7" />
+        <path d="m3 21 7-7" />
+      </symbol>
+      <symbol id="rkf-i-github" viewBox="0 0 24 24">
+        <path
+          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+      </symbol>
+      <symbol id="rkf-i-linkedin" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" fill="currentColor" />
+        <rect x="2" y="9" width="4" height="12" fill="currentColor" />
+        <circle cx="4" cy="4" r="2" fill="currentColor" />
+      </symbol>
+      <symbol id="rkf-i-facebook" viewBox="0 0 24 24">
+        <path fill="currentColor" stroke="none"
+          d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.2 2 10 3.7 10 6v2H7.5v3H10v11h4V11h2.6l.4-3z" />
+      </symbol>
+      <symbol id="rkf-i-x" viewBox="0 0 24 24">
+        <path fill="currentColor" stroke="none"
+          d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <footer class="rkf" id="rkf-footer">
+
+    <!-- ================= HERO / CTA ================= -->
+    <section class="rkf__hero">
+      <svg class="rkf__wave" viewBox="0 0 1981 402" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="rkfWaveGrad" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" stop-color="#ff5a00" stop-opacity=".35" />
+            <stop offset=".35" stop-color="#ff5a00" stop-opacity=".75" />
+            <stop offset=".56" stop-color="#ff6a00" />
+            <stop offset="1" stop-color="#ff7a1a" />
+          </linearGradient>
+          <filter id="rkfWaveBlur" x="-5%" y="-60%" width="110%" height="220%">
+            <feGaussianBlur stdDeviation="5" />
+          </filter>
+        </defs>
+        <path d="M0,78 C110,60 200,49 285,49 C600,49 850,205 1100,205 C1300,205 1600,60 1935,-4" fill="none"
+          stroke="url(#rkfWaveGrad)" stroke-width="8" opacity=".7" filter="url(#rkfWaveBlur)"
+          vector-effect="non-scaling-stroke" />
+        <path d="M0,78 C110,60 200,49 285,49 C600,49 850,205 1100,205 C1300,205 1600,60 1935,-4" fill="none"
+          stroke="url(#rkfWaveGrad)" stroke-width="2" vector-effect="non-scaling-stroke" />
+      </svg>
+      <span class="rkf__glow rkf__glow--center"></span>
+      <span class="rkf__glow rkf__glow--corner"></span>
+
+      <div class="rkf__container rkf__hero-inner">
+        <p class="rkf__eyebrow"><span class="rkf__eyebrow-line"></span>GET IN TOUCH</p>
+        <h2 class="rkf__title">Let’s Work <span>Together</span></h2>
+        <p class="rkf__lead">Have a project in mind? I’d love to hear about it. Let’s create something amazing together.
+        </p>
+
+        <div class="rkf__actions">
+          <a href="#rkf-contact" class="rkf__btn" data-rkf-btn>
+            <span>Let’s Talk</span>
+            <svg class="rkf__ico">
+              <use href="#rkf-i-arrow-ur" />
+            </svg>
+          </a>
+
+          <ul class="rkf__features">
+            <li class="rkf__feature">
+              <svg class="rkf__ico">
+                <use href="#rkf-i-zap" />
+              </svg>
+              <div><strong>Fast Response</strong><small>Within 24 Hours</small></div>
+            </li>
+            <li class="rkf__feature">
+              <svg class="rkf__ico">
+                <use href="#rkf-i-shield" />
+              </svg>
+              <div><strong>100% Dedication</strong><small>Your Satisfaction</small></div>
+            </li>
+            <li class="rkf__feature">
+              <svg class="rkf__ico">
+                <use href="#rkf-i-users" />
+              </svg>
+              <div><strong>Long Term Support</strong><small>After Delivery</small></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rkf__badge" role="img" aria-label="10+ years experience">
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <path id="rkfArcTop" d="M 24,100 A 76,76 0 0 1 176,100" />
+            <path id="rkfArcBottom" d="M 16,100 A 84,84 0 0 0 184,100" />
+          </defs>
+          <circle class="rkf__badge-ring" cx="100" cy="100" r="97" />
+          <circle class="rkf__badge-core" cx="100" cy="100" r="50" />
+          <text class="rkf__badge-text">
+            <textPath href="#rkfArcTop" startOffset="50%" text-anchor="middle">10+ YEARS EXPERIENCE</textPath>
+          </text>
+          <text class="rkf__badge-text">
+            <textPath href="#rkfArcBottom" startOffset="50%" text-anchor="middle">10+ YEARS EXPERIENCE</textPath>
+          </text>
+          <circle class="rkf__badge-dot" cx="24" cy="100" r="2.6" />
+          <circle class="rkf__badge-dot" cx="176" cy="100" r="2.6" />
+          <path class="rkf__badge-star" d="M100 84 Q103 97 116 100 Q103 103 100 116 Q97 103 84 100 Q97 97 100 84Z" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================= MAIN ================= -->
+    <div class="rkf__main">
+      <div class="rkf__container rkf__grid">
+
+        <div class="rkf__col rkf__brand">
+          <a href="#" class="rkf__logo">
+            <svg class="rkf__logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 1 47 24 24 47 1 24Z" fill="#ff5a00" />
+              <path d="M24 11 37 24 24 37 11 24Z" fill="#0a0a0a" />
+              <path d="M24 17 31 24 24 31 17 24Z" fill="#ff5a00" />
+            </svg>
+            <span>
+              <span class="rkf__logo-name">Rakibul <em>Islam</em></span>
+              <a href=""><img src="/images/log" alt=""></a>
+              <span class="rkf__logo-role">Frontend Developer</span>
+            </span>
+          </a>
+          <p class="rkf__brand-text">Building modern, fast and responsive web experiences with clean code and creative
+            ideas.</p>
+          <div class="rkf__social">
+            <a href="#" class="rkf__social-link" aria-label="GitHub"><svg class="rkf__ico">
+                <use href="#rkf-i-github" />
+              </svg></a>
+            <a href="#" class="rkf__social-link" aria-label="LinkedIn"><svg class="rkf__ico">
+                <use href="#rkf-i-linkedin" />
+              </svg></a>
+            <a href="#" class="rkf__social-link rkf__social-link--accent" aria-label="Facebook"><svg class="rkf__ico">
+                <use href="#rkf-i-facebook" />
+              </svg></a>
+            <a href="#" class="rkf__social-link is-active" aria-label="X"><svg class="rkf__ico">
+                <use href="#rkf-i-x" />
+              </svg></a>
+          </div>
+          <span class="rkf__brand-line"></span>
+        </div>
+
+        <div class="rkf__col">
+          <h4 class="rkf__col-title">Quick Links</h4>
+          <ul class="rkf__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="rkf__col" id="rkf-contact">
+          <h4 class="rkf__col-title">Contact Information</h4>
+          <ul class="rkf__contact">
+            <li>
+              <span class="rkf__round"><svg class="rkf__ico">
+                  <use href="#rkf-i-phone" />
+                </svg></span>
+              <div><span>Call Us At</span><a href="tel:+1123456789">01879-807537</a></div>
+            </li>
+            <li>
+              <span class="rkf__round"><svg class="rkf__ico">
+                  <use href="#rkf-i-mail" />
+                </svg></span>
+              <div><span>Email Us</span><a href="mailto:rakibulislam@gmail.com">dev.rakibul37@gmail.com</a></div>
+            </li>
+            <li>
+              <span class="rkf__round"><svg class="rkf__ico">
+                  <use href="#rkf-i-chat" />
+                </svg></span>
+              <div><span>Working Hours</span>
+                <p>Mon - Fri, 9:00 AM - 6:00 PM</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rkf__col">
+          <h4 class="rkf__col-title">Our Location</h4>
+          <div class="rkf__address">
+            <span class="rkf__round rkf__round--sm"><svg class="rkf__ico">
+                <use href="#rkf-i-pin" />
+              </svg></span>
+            <p>2464 Royal Ln. Mesa,<br>New Jersey 45463</p>
+          </div>
+          <a class="rkf__map" href="https://maps.google.com/?q=2464+Royal+Ln+Mesa+New+Jersey+45463" target="_blank"
+            rel="noopener" aria-label="Open map">
+            <svg class="rkf__map-roads" viewBox="0 0 370 108" preserveAspectRatio="none" aria-hidden="true">
+              <g fill="none" stroke-linecap="round">
+                <path d="M60 -2 L150 110" stroke="#262626" stroke-width="3" />
+                <path d="M82 -2 L172 110" stroke="#1d1d1d" stroke-width="1.5" />
+                <path d="M20 8 L8 110" stroke="#1e1e1e" stroke-width="1.5" />
+                <path d="M170 4 L370 38" stroke="#2c2c2c" stroke-width="1.5" stroke-dasharray="4 3" />
+                <path d="M215 0 L370 70" stroke="#1d1d1d" stroke-width="1.2" />
+                <path d="M110 70 L370 30" stroke="#181818" stroke-width="1.2" />
+                <path d="M260 0 L240 110" stroke="#181818" stroke-width="1.2" />
+              </g>
+            </svg>
+            <span class="rkf__map-pin"><svg class="rkf__ico">
+                <use href="#rkf-i-pin" />
+              </svg></span>
+            <span class="rkf__map-expand"><svg class="rkf__ico">
+                <use href="#rkf-i-expand" />
+              </svg></span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ================= BOTTOM BAR ================= -->
+    <div class="rkf__bar">
+      <div class="rkf__container rkf__bar-inner">
+        <p>© <span data-rkf-year>2026</span> <a href="#">Rakibul Islam</a>. All Rights Reserved.</p>
+        <button class="rkf__totop" type="button" data-rkf-top>
+          <span class="rkf__totop-icon"><svg class="rkf__ico">
+              <use href="#rkf-i-arrow-up" />
+            </svg></span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ FOOTER END ============ -->
+
+
+    <script src="/js/script.js"></script>
+    <script src="/js/dark-light.js"></script>
+    <script src="/js/dark-light.js"></script>
+    <script src="/js/cursor.js"></script>
+
+</body>
+
+</html>

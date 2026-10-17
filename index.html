@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakibul Personal Portfolio</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta name="description" content="Weblance - Michael Phillps personal portfolio and creative agency website.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="/scss/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- ============================= HEADER ============================= -->
+ 
+  <div class="bubble-cursor-trail"></div>
+  <div class="custom-cursor"><span class="cursor-char"></span></div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="/index.html" class="logo">
+          <span class="logo-mark">
+            <img src="/images/logo.png" alt="">
+          </span>
+        </a>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+          <a href="#">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#Skill">Skill</a>
+          <a href="#project">Project</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+
+          <!-- Dark / Light Toggle -->
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-sun light-icon"></i>
+            <i class="fa-solid fa-moon dark-icon"></i>
+          </button>
+
+          <!-- Contact Button -->
+          <a href="/images/Rakibul Islam.pdf" class="btn-header">
+            RESUME
+            <span class="icon-circle">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+
+          <!-- Mobile Menu -->
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav" id="mobileNav">
+
+    <div class="mobile-nav-top">
+
+      <a href="#" class="logo">
+        <img src="/images/logo.png" alt="">
+      </a>
+
+      <button class="close-btn" id="navClose" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+    </div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#Skill">Skill</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <a href="#contact" class="btn-primary">
+      RESUME
+      <span class="icon-circle">
+        <i class="fa-solid fa-arrow-right"></i>
+      </span>
+    </a>
+
+  </div>
+
+  <!-- ============================= HERO ============================= -->
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-frame">
+        <div class="hero-top">
+          <div class="hero-copy">
+            <span class="badge">Welcome To My Creative Space</span>
+            <h1>Hello! I'm<br><span>Rakibul Islam</span></h1>
+            <div class="pt">
+              <p class="typing-text" data-words="Front End Developer,Shopify Developer,Wix Devewlopre">
+              </p>
+            </div>
+            <div class="hero-intro">
+              <span class="badge">Available for Freelance</span>
+              <p>I'm a Web Developer with 1 year of Shopify experience, creating modern, responsive, and user-friendly
+                websites.</p>
+              <div class="hero_so_aria">
+                <div class="socials">
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="#" class="btn-primary">Contact Me <span class="icon-circle"><i
+                      class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-bottom">
+          <img src="images/rakib (2).png" alt="Michael Phillps">
+          <div class="hero-seal">
+            <svg class="seal-text" viewBox="0 0 120 120">
+              <defs>
+                <path id="circlePath" d="M 60,60 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0" />
+              </defs>
+              <text fill="#fff" font-size="9" font-weight="700" letter-spacing="1.5">
+                <textPath href="#circlePath">1+ Years Experience &#8226; 1+ Years Experience &#8226;</textPath>
+              </text>
+            </svg>
+            <span class="seal-core"><a href=""><img src="/images/logo.png" alt=""></a></span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ============================= SERVICES ============================= -->
+
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-panel">
+
+        <div class="section-head">
+          <h2 class="section-title">Professional services we offer</h2>
+          <p class="section-desc">
+            I provide a comprehensive range of professional services designed
+            to help individuals and businesses achieve their goals with confidence.
+          </p>
+        </div>
+
+        <div class="services-carousel">
+
+          <button class="services-arrow services-prev" type="button" aria-label="Previous services">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+
+              <!-- Shopify -->
+              <div class="swiper-slide">
+                <article class="service-card service-shopify">
+                  <span class="service-tag">Primary Expertise</span>
+
+                  <div class="service-heading">
+                    <div class="service-icon">
+                      <i class="fa-brands fa-shopify"></i>
+                    </div>
+                    <h3>Shopify Developer</h3>
+                  </div>
+
+                  <p class="service-description">
+                    Shopify store development and customization for modern
+                    eCommerce businesses.
+                  </p>
+
+                  <ul class="service-list">
+                    <li>Shopify Store Setup</li>
+                    <li>Theme Development &amp; Customization</li>
+                    <li>Custom Shopify Sections</li>
+                    <li>Product &amp; Collection Setup</li>
+                    <li>Responsive Store Design</li>
+                    <li>Liquid, HTML, CSS &amp; JavaScript</li>
+                    <li>Shopify 2.0 Development</li>
+                    <li>Store Redesign</li>
+                    <li>App Integration</li>
+                    <li>Bug Fixing</li>
+                    <li>Performance Optimization</li>
+                  </ul>
+
+                  <a href="#contact" class="read-more">
+                    Contact Me
+                    <span class="icon-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+
+              <!-- Squarespace -->
+              <div class="swiper-slide">
+                <article class="service-card service-squarespace">
+                  <span class="service-tag">Website Development</span>
+
+                  <div class="service-heading">
+                    <div class="service-icon">
+                      <i class="fa-solid fa-display"></i>
+                    </div>
+                    <h3>Squarespace Developer</h3>
+                  </div>
+
+                  <p class="service-description">
+                    Beautiful, responsive and easy-to-manage Squarespace
+                    websites for businesses.
+                  </p>
+
+                  <ul class="service-list">
+                    <li>Squarespace Website Setup</li>
+                    <li>Template Customization</li>
+                    <li>Custom CSS Styling</li>
+                    <li>Portfolio Website Design</li>
+                    <li>E-commerce Website Setup</li>
+                    <li>Mobile Responsive Design</li>
+                    <li>Landing Page Design</li>
+                    <li>Website Redesign</li>
+                    <li>Content &amp; Image Updates</li>
+                    <li>Website Maintenance</li>
+                  </ul>
+
+                  <a href="#contact" class="read-more">
+                    Contact Me
+                    <span class="icon-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+
+              <!-- Frontend -->
+              <div class="swiper-slide">
+                <article class="service-card service-frontend">
+                  <span class="service-tag">Custom Solutions</span>
+
+                  <div class="service-heading">
+                    <div class="service-icon">
+                      <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Frontend Developer</h3>
+                  </div>
+
+                  <p class="service-description">
+                    Modern, fast and responsive interfaces designed to deliver
+                    a seamless user experience.
+                  </p>
+
+                  <ul class="service-list">
+                    <li>HTML5, CSS3 &amp; JavaScript</li>
+                    <li>Sass / SCSS Development</li>
+                    <li>Responsive Web Design</li>
+                    <li>Bootstrap Development</li>
+                    <li>CSS Animations &amp; Interactions</li>
+                    <li>Pixel-Perfect Web Design</li>
+                    <li>Figma to HTML</li>
+                    <li>Cross-Browser Compatibility</li>
+                    <li>Website Speed Optimization</li>
+                    <li>Bug Fixing &amp; Maintenance</li>
+                  </ul>
+
+                  <a href="#contact" class="read-more">
+                    Contact Me
+                    <span class="icon-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+
+              <!-- Wix -->
+              <div class="swiper-slide">
+                <article class="service-card service-wix">
+                  <span class="service-tag">Website Design</span>
+
+                  <div class="service-heading">
+                    <div class="service-icon">
+                      <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Wix Developer</h3>
+                  </div>
+
+                  <p class="service-description">
+                    Professional Wix websites with custom layouts and
+                    responsive designs for your business.
+                  </p>
+
+                  <ul class="service-list">
+                    <li>Wix Website Design</li>
+                    <li>Wix Editor Customization</li>
+                    <li>Responsive Web Design</li>
+                    <li>Landing Page Design</li>
+                    <li>Business Website Development</li>
+                    <li>Wix Store Setup</li>
+                    <li>Custom CSS Styling</li>
+                    <li>Website Redesign</li>
+                    <li>Content Updates</li>
+                    <li>Website Maintenance</li>
+                  </ul>
+
+                  <a href="#contact" class="read-more">
+                    Contact Me
+                    <span class="icon-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+
+              <!-- Webflow -->
+              <div class="swiper-slide">
+                <article class="service-card service-webflow">
+                  <span class="service-tag">Modern Web Design</span>
+
+                  <div class="service-heading">
+                    <div class="service-icon">
+                      <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3>Webflow Developer</h3>
+                  </div>
+
+                  <p class="service-description">
+                    Visually engaging Webflow websites with responsive layouts,
+                    interactions and CMS functionality.
+                  </p>
+
+                  <ul class="service-list">
+                    <li>Webflow Website Design</li>
+                    <li>Responsive Layout Development</li>
+                    <li>Webflow CMS Setup</li>
+                    <li>Custom Animations</li>
+                    <li>Landing Page Development</li>
+                    <li>Website Interactions</li>
+                    <li>Figma to Webflow</li>
+                    <li>SEO-Friendly Structure</li>
+                    <li>Website Redesign</li>
+                    <li>Bug Fixing &amp; Maintenance</li>
+                  </ul>
+
+                  <a href="#contact" class="read-more">
+                    Contact Me
+                    <span class="icon-circle">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                </article>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="services-arrow services-next" type="button" aria-label="Next services">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+        </div>
+
+        <div class="services-dots"></div>
+
+        <!-- <div class="cta-line">
+        <span class="avatars">
+          <img src="images/avatar1.jpg" alt="Developer">
+          <img src="images/avatar2.jpg" alt="Client">
+        </span>
+
+        <p>
+          Let's Transform Your Ideas Into Reality —
+          <a href="#contact">View All Services</a>
+        </p>
+
+        <a href="#contact" class="cta-arrow" aria-label="Contact me">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div> -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================= ABOUT ============================= -->
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="images/about-.png" alt="Michael Phillps">
+        </div>
+
+        <div class="about-content">
+          <span class="badge">About Me</span>
+          <h2>Building creative &amp; impactful digital solutions</h2>
+          <p class="desc">I'm a passionate Web Developer with 1 year of hands-on experience in Shopify development. I
+            specialize in Shopify store design, theme customization, and creating responsive, user-friendly websites. I
+            also work with Wix, Squarespace, Webflow, and Frontend Development to build modern digital experiences that
+            combine creativity, functionality, and performance. My goal is to help businesses establish a strong online
+            presence through effective web solutions.</p>
+
+          <div class="about-stats">
+            <div class="rakib-btn">
+              <div class="stat-years">
+                <span class="num">1<span class="plus">+</span></span>
+                <span class="label">Years<br>Experience</span>
+              </div>
+              <div class="about-actions">
+                <a href="#" class="btn-primary">More About Me <span class="icon-circle"><i
+                      class="fa-solid fa-arrow-right"></i></span></a>
+              </div>
+            </div>
+
+
+            <div class="stat-projects">
+              <span class="icon-box"><i class="fa-solid fa-pen-ruler"></i></span>
+              <div class="num">100+</div>
+              <div class="label">Successful Projects Deliver</div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section Start -->
+  <section class="skills-section" id="Skill">
+    <div class="skills-container">
+
+      <!-- Section Header -->
+      <header class="section-header">
+        <div class="section-heading">
+          <span class="eyebrow">My Capabilities</span>
+          <h2>Technical<span> Skills &amp;Expertise</span></h2>
+          <p class="section-intro">A selection of technologies, tools, and creative skills I work with.</p>
+        </div>
+      </header>
+
+      <!-- Background Gradient Orbs -->
+      <div class="skills-orbs" aria-hidden="true">
+        <div class="ambient-orb ambient-orb--cyan"></div>
+        <div class="ambient-orb ambient-orb--purple"></div>
+        <div class="ambient-orb ambient-orb--pink"></div>
+      </div>
+
+      <!-- Skills Filter Tabs -->
+      <nav class="skill-filters" aria-label="Filter skills">
+
+        <button class="tab-btn is-active" type="button" data-category="all" aria-pressed="true">
+          <i class="fa-solid fa-border-all"></i>
+          All Skills
+        </button>
+
+        <button class="tab-btn" type="button" data-category="frontend" aria-pressed="false">
+          <i class="fa-solid fa-code"></i>
+          Frontend
+        </button>
+
+        <button class="tab-btn" type="button" data-category="backend" aria-pressed="false">
+          <i class="fa-solid fa-server"></i>
+          Backend
+        </button>
+
+        <button class="tab-btn" type="button" data-category="uiux" aria-pressed="false">
+          <i class="fa-solid fa-compass-drafting"></i>
+          UI / UX Design
+        </button>
+
+        <button class="tab-btn" type="button" data-category="tools" aria-pressed="false">
+          <i class="fa-solid fa-file-lines"></i>
+          CMS
+        </button>
+
+      </nav>
+
+      <!-- Dynamic Skills Cards -->
+      <div class="skills-grid" id="skillsGrid" aria-live="polite">
+        <!-- Skill cards will be added by JavaScript -->
+      </div>
+
+    </div>
+  </section>
+  <!-- Skills Section End -->
+
+  <!-- ============================= EXPERIENCE ============================= -->
+
+  <section class="experience">
+    <div class="container">
+      <span class="badge">Professional Experience</span>
+      <h2 class="section-title">Key experiences that define</h2>
+      <p class="section-desc" style="max-width:560px;margin:0 auto 30px">
+        A collection of key experiences that define my professional journey, highlighting the skills, projects, and
+        achievements that have shaped my growth.
+      </p>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="work">My Work Experience</button>
+        <button class="tab-btn" data-tab="education">My Education</button>
+      </div>
+
+      <div class="exp-panel">
+        <div class="content-panel active" id="work">
+          <div class="exp-row">
+            <div class="exp-company">
+              <span class="logo"><i class="fa-solid fa-globe"></i></span>
+              <div>
+                <h4>ilmify Tech Agency</h4>
+                <span>[ November 2025 &ndash; Stril Now 2026 ]</span>
+              </div>
+            </div>
+            <div class="exp-role">
+              <h4>SHopify Developer</h4>
+              <p>Built scalable and responsive web interfaces using clean code and modern frameworks. Ensured
+                cross-browser compatibility and smooth functionality.</p>
+            </div>
+          </div>
+          <div class="exp-row">
+            <div class="exp-company">
+              <span class="logo"><i class="fa-solid fa-globe"></i></span>
+              <div>
+                <h4>CEGIS</h4>
+                <span>[ March 2024 &ndash; October 2025 ]</span>
+              </div>
+            </div>
+            <div class="exp-role">
+              <h4>Consumer Servear</h4>
+              <p>Built scalable and responsive web interfaces using clean code and modern frameworks. Ensured
+                cross-browser compatibility and smooth functionality.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-panel" id="education">
+          <div class="exp-row">
+            <div class="exp-company">
+              <span class="logo"><i class="fa-solid fa-graduation-cap"></i></span>
+              <div>
+                <h4>Kushtia Politechnic Institute</h4>
+                <span>[ 2019 &ndash; 2023 ]</span>
+              </div>
+            </div>
+            <div class="exp-role">
+              <h4>Diploma in Computer Technologi</h4>
+              <p>Studied core computer science fundamentals with a focus on human-computer interaction and web
+                technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PEOJECT ============================= -->
+
+  <section class="portfolio-section" id="project">
+    <div class="container">
+
+      <!-- Section Header Top -->
+      <div class="section-header">
+        <span class="sub-title"><span class="star">*</span> My Portfolio</span>
+        <h2 class="section-title">Tools & technologies I use</h2>
+        <p class="section-desc">
+          A curated set of modern tools and technologies that I use to design, develop, and deliver efficient,
+          high-quality digital experiences.
+        </p>
+      </div>
+
+      <!-- Portfolio Swiper Slider Container -->
+      <div class="swiper portfolio-slider">
+        <div class="swiper-wrapper">
+
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img src="/images/project-5.png" alt="Web Design">
+              </div>
+              <div class="card-content">
+                <div class="card-top">
+                  <span class="category"><span class="dot">•</span> Web Design</span>
+                  <a href="/project-page.html" class="btn-arrow" aria-label="View Project">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <h3 class="title">Nova Design Studio</h3>
+                <p class="description">A modern & creative design project focused</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img src="/images/project-2.png" alt="Visual Identity">
+              </div>
+              <div class="card-content">
+                <div class="card-top">
+                  <span class="category"><span class="dot">•</span> Visual Identity</span>
+                  <a href="/project-page.html" class="btn-arrow" aria-label="View Project">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <h3 class="title">NextGen User Interface</h3>
+                <p class="description">A modern & creative design project focused</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img src="/images/project-3.png" alt="E-Commerce">
+              </div>
+              <div class="card-content">
+                <div class="card-top">
+                  <span class="category"><span class="dot">•</span> E-Commerce</span>
+                  <a href="/project-page.html" class="btn-arrow" aria-label="View Project">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <h3 class="title">E-Commerce Platform UI</h3>
+                <p class="description">A modern & creative design project focused</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 (Extra for sliding demonstration) -->
+          <div class="swiper-slide">
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img src="/images/project-4.png" alt="Brand Identity">
+              </div>
+              <div class="card-content">
+                <div class="card-top">
+                  <span class="category"><span class="dot">•</span> Branding</span>
+                  <a href="/project-page.html" class="btn-arrow" aria-label="View Project">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <h3 class="title">Brand Identity System</h3>
+                <p class="description">A modern & creative design project focused</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 (Extra for sliding demonstration) -->
+          <div class="swiper-slide">
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img src="/images/project-6.png" alt="Brand Identity">
+              </div>
+              <div class="card-content">
+                <div class="card-top">
+                  <span class="category"><span class="dot">•</span> Branding</span>
+                  <a href="/project-page.html" class="btn-arrow" aria-label="View Project">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <h3 class="title">Brand Identity System</h3>
+                <p class="description">A modern & creative design project focused</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 (Extra for sliding demonstration) -->
+          <div class="swiper-slide">
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img src="/images/project-7.png" alt="Brand Identity">
+              </div>
+              <div class="card-content">
+                <div class="card-top">
+                  <span class="category"><span class="dot">•</span> Branding</span>
+                  <a href="/project-page.html" class="btn-arrow" aria-label="View Project">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <h3 class="title">Brand Identity System</h3>
+                <p class="description">A modern & creative design project focused</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 (Extra for sliding demonstration) -->
+          <div class="swiper-slide">
+            <div class="portfolio-card">
+              <div class="card-image">
+                <img src="/images/project-8.png" alt="Brand Identity">
+              </div>
+              <div class="card-content">
+                <div class="card-top">
+                  <span class="category"><span class="dot">•</span> Branding</span>
+                  <a href="/project-page.html" class="btn-arrow" aria-label="View Project">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <h3 class="title">Brand Identity System</h3>
+                <p class="description">A modern & creative design project focused</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Swiper Custom Pagination Dots -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Portfolio Bottom Bar (As requested from image) -->
+      <!-- <div class="portfolio-bottom-bar">
+        <div class="client-avatars">
+          <img src="/images/avatar-1.png" alt="Client">
+          <img src="/images/avatar-2.png" alt="Client">
+        </div>
+        <p class="bottom-text">
+          Let's Transform Your Ideas Into Reality – <a href="/project.html" class="view-all-link">View All Services.</a>
+        </p>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- ============================= MARQUEE BAND ============================= -->
+
+  <section class="marquee-band">
+    <div class="marquee-row row-orange">
+      <div class="marquee-track">
+        <span><i class="fa-solid fa-asterisk"></i> Frontend Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> UI/UX Design</span>
+        <span><i class="fa-solid fa-asterisk"></i> CMS Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Web Application Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Frontend Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> UI/UX Design</span>
+        <span><i class="fa-solid fa-asterisk"></i> CMS Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Web Application Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Frontend Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> UI/UX Design</span>
+        <span><i class="fa-solid fa-asterisk"></i> CMS Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Web Application Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Frontend Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> UI/UX Design</span>
+        <span><i class="fa-solid fa-asterisk"></i> CMS Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Web Application Development</span>
+      </div>
+    </div>
+    <div class="marquee-row row-dark">
+      <div class="marquee-track" style="animation-direction:reverse">
+        <span><i class="fa-solid fa-asterisk"></i> Frontend Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> UI/UX Design</span>
+        <span><i class="fa-solid fa-asterisk"></i> CMS Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Web Application Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Frontend Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> UI/UX Design</span>
+        <span><i class="fa-solid fa-asterisk"></i> CMS Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Web Application Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Frontend Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> UI/UX Design</span>
+        <span><i class="fa-solid fa-asterisk"></i> CMS Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Web Application Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Frontend Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> UI/UX Design</span>
+        <span><i class="fa-solid fa-asterisk"></i> CMS Development</span>
+        <span><i class="fa-solid fa-asterisk"></i> Web Application Development</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT ============================= -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-panel">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="badge">* Contact Us Today!</span>
+            <h2>Let's work together create something amazing</h2>
+            <p>Whether you have a project in mind or just want to connect, feel free to reach out and let's start the
+              conversation.</p>
+
+            <!-- Quick Contact Options -->
+            <div class="quick-contact-options">
+              <a href="mailto:md.rakibul0779@gmail.com" class="contact-btn">
+                <i class="fa-solid fa-envelope"></i> Email Sign Up
+              </a>
+              <a href="https://wa.me/8801879807531" target="_blank" class="contact-btn whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+              <a href="tel:01879807531" class="contact-btn call">
+                <i class="fa-solid fa-phone"></i> Direct Call
+              </a>
+            </div>
+
+            <span class="seal"><i class="fa-solid fa-diamond"></i></span>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="portfolioContactForm" onsubmit="handleContactSubmit(event)">
+            <!-- Dynamic Submission Time -->
+            <input type="hidden" name="Submission_Time" id="submission-time">
+
+            <h3>Get in Touch</h3>
+            <p>Fill out the form below to connect with me. I'll get back to you soon to discuss your project or answer
+              any questions.</p>
+
+            <div class="form-row">
+              <input type="text" name="First_Name" placeholder="First Name*" required>
+              <input type="text" name="Last_Name" placeholder="Last Name*" required>
+            </div>
+            <div class="form-row">
+              <input type="tel" name="Phone_Number" placeholder="Phone Number*" required>
+              <input type="email" name="Email_Address" placeholder="Email Address*" required>
+            </div>
+            <textarea name="Message" placeholder="Any Message..." required></textarea>
+
+            <button type="submit" id="submitBtn" class="btn-primary">
+              Submit Message <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+
+            <!-- Inline Success/Error Message Container -->
+            <div class="form-response-msg" id="formResponseMsg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= FOOTER ============================= -->
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="rkf-i-zap" viewBox="0 0 24 24">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </symbol>
+      <symbol id="rkf-i-shield" viewBox="0 0 24 24">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        <path d="m9 12 2 2 4-4" />
+      </symbol>
+      <symbol id="rkf-i-users" viewBox="0 0 24 24">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+      </symbol>
+      <symbol id="rkf-i-arrow-ur" viewBox="0 0 24 24">
+        <path d="M7 17 17 7" />
+        <path d="M7 7h10v10" />
+      </symbol>
+      <symbol id="rkf-i-arrow-r" viewBox="0 0 24 24">
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+      </symbol>
+      <symbol id="rkf-i-arrow-up" viewBox="0 0 24 24">
+        <path d="M12 19V5" />
+        <path d="m5 12 7-7 7 7" />
+      </symbol>
+      <symbol id="rkf-i-phone" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+      </symbol>
+      <symbol id="rkf-i-mail" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2.5" fill="currentColor" stroke="none" />
+        <path d="m3.5 7.5 8.5 6 8.5-6" stroke="#1a100a" stroke-width="1.6" />
+      </symbol>
+      <symbol id="rkf-i-chat" viewBox="0 0 24 24">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        <path d="M8.5 10h.01M12 10h.01M15.5 10h.01" />
+      </symbol>
+      <symbol id="rkf-i-pin" viewBox="0 0 24 24">
+        <path fill="currentColor" stroke="none"
+          d="M12 1.5a8.5 8.5 0 0 0-8.5 8.5c0 6.6 8.5 13 8.5 13s8.5-6.4 8.5-13A8.5 8.5 0 0 0 12 1.5z" />
+        <circle cx="12" cy="10" r="3" fill="#0a0a0a" stroke="none" />
+      </symbol>
+      <symbol id="rkf-i-expand" viewBox="0 0 24 24">
+        <path d="M15 3h6v6" />
+        <path d="M9 21H3v-6" />
+        <path d="m21 3-7 7" />
+        <path d="m3 21 7-7" />
+      </symbol>
+      <symbol id="rkf-i-github" viewBox="0 0 24 24">
+        <path
+          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+      </symbol>
+      <symbol id="rkf-i-linkedin" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" fill="currentColor" />
+        <rect x="2" y="9" width="4" height="12" fill="currentColor" />
+        <circle cx="4" cy="4" r="2" fill="currentColor" />
+      </symbol>
+      <symbol id="rkf-i-facebook" viewBox="0 0 24 24">
+        <path fill="currentColor" stroke="none"
+          d="M14 8V6.2c0-.8.2-1.2 1.4-1.2H17V2h-2.6C11.2 2 10 3.7 10 6v2H7.5v3H10v11h4V11h2.6l.4-3z" />
+      </symbol>
+      <symbol id="rkf-i-x" viewBox="0 0 24 24">
+        <path fill="currentColor" stroke="none"
+          d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <footer class="rkf" id="rkf-footer">
+
+    <!-- ================= HERO / CTA ================= -->
+    <section class="rkf__hero">
+      <svg class="rkf__wave" viewBox="0 0 1981 402" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="rkfWaveGrad" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" stop-color="#ff5a00" stop-opacity=".35" />
+            <stop offset=".35" stop-color="#ff5a00" stop-opacity=".75" />
+            <stop offset=".56" stop-color="#ff6a00" />
+            <stop offset="1" stop-color="#ff7a1a" />
+          </linearGradient>
+          <filter id="rkfWaveBlur" x="-5%" y="-60%" width="110%" height="220%">
+            <feGaussianBlur stdDeviation="5" />
+          </filter>
+        </defs>
+        <path d="M0,78 C110,60 200,49 285,49 C600,49 850,205 1100,205 C1300,205 1600,60 1935,-4" fill="none"
+          stroke="url(#rkfWaveGrad)" stroke-width="8" opacity=".7" filter="url(#rkfWaveBlur)"
+          vector-effect="non-scaling-stroke" />
+        <path d="M0,78 C110,60 200,49 285,49 C600,49 850,205 1100,205 C1300,205 1600,60 1935,-4" fill="none"
+          stroke="url(#rkfWaveGrad)" stroke-width="2" vector-effect="non-scaling-stroke" />
+      </svg>
+      <span class="rkf__glow rkf__glow--center"></span>
+      <span class="rkf__glow rkf__glow--corner"></span>
+
+      <div class="rkf__container rkf__hero-inner">
+        <p class="rkf__eyebrow"><span class="rkf__eyebrow-line"></span>GET IN TOUCH</p>
+        <h2 class="rkf__title">Let’s Work <span>Together</span></h2>
+        <p class="rkf__lead">Have a project in mind? I’d love to hear about it. Let’s create something amazing together.
+        </p>
+
+        <div class="rkf__actions">
+          <a href="#rkf-contact" class="rkf__btn" data-rkf-btn>
+            <span>Let’s Talk</span>
+            <svg class="rkf__ico">
+              <use href="#rkf-i-arrow-ur" />
+            </svg>
+          </a>
+
+          <ul class="rkf__features">
+            <li class="rkf__feature">
+              <svg class="rkf__ico">
+                <use href="#rkf-i-zap" />
+              </svg>
+              <div><strong>Fast Response</strong><small>Within 24 Hours</small></div>
+            </li>
+            <li class="rkf__feature">
+              <svg class="rkf__ico">
+                <use href="#rkf-i-shield" />
+              </svg>
+              <div><strong>100% Dedication</strong><small>Your Satisfaction</small></div>
+            </li>
+            <li class="rkf__feature">
+              <svg class="rkf__ico">
+                <use href="#rkf-i-users" />
+              </svg>
+              <div><strong>Long Term Support</strong><small>After Delivery</small></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rkf__badge" role="img" aria-label="10+ Years Experience">
+        <svg class="rkf__badge-svg" viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <path id="rkfBadgeTop" d="M 24,100 A 76,76 0 0 1 176,100" />
+            <path id="rkfBadgeBottom" d="M 24,100 A 76,76 0 0 0 176,100" />
+            <clipPath id="rkfBadgeLogoClip">
+              <circle cx="100" cy="100" r="43" />
+            </clipPath>
+          </defs>
+
+          <!-- Orange circular background -->
+          <circle class="rkf__badge-ring" cx="100" cy="100" r="97" />
+
+          <!-- Inner black circle -->
+          <circle class="rkf__badge-core" cx="100" cy="100" r="49" />
+
+          <!-- Curved top text -->
+          <text class="rkf__badge-text">
+            <textPath href="#rkfBadgeTop" startOffset="50%" text-anchor="middle">10+ YEARS EXPERIENCE</textPath>
+          </text>
+
+          <!-- Curved bottom text -->
+          <text class="rkf__badge-text">
+            <textPath href="#rkfBadgeBottom" startOffset="50%" text-anchor="middle">10+ YEARS EXPERIENCE</textPath>
+          </text>
+
+          <!-- Center logo -->
+          <image class="rkf__badge-logo" href="/images/logo.png" x="57" y="57" width="86" height="86"
+            preserveAspectRatio="xMidYMid meet" clip-path="url(#rkfBadgeLogoClip)" />
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+    <div class="rkf__main">
+      <div class="rkf__container rkf__grid">
+
+        <div class="rkf__col rkf__brand">
+          <a href="#" class="rkf__logo">
+            <svg class="rkf__logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 1 47 24 24 47 1 24Z" fill="#ff5a00" />
+              <path d="M24 11 37 24 24 37 11 24Z" fill="#0a0a0a" />
+              <path d="M24 17 31 24 24 31 17 24Z" fill="#ff5a00" />
+            </svg>
+            <span>
+              <span class="rkf__logo-name">Rakibul <em>Islam</em></span>
+              <a href=""><img src="/images/log" alt=""></a>
+              <span class="rkf__logo-role">Frontend Developer</span>
+            </span>
+          </a>
+          <p class="rkf__brand-text">Building modern, fast and responsive web experiences with clean code and creative
+            ideas.</p>
+          <div class="rkf__social">
+            <a href="#" class="rkf__social-link" aria-label="GitHub"><svg class="rkf__ico">
+                <use href="#rkf-i-github" />
+              </svg></a>
+            <a href="#" class="rkf__social-link" aria-label="LinkedIn"><svg class="rkf__ico">
+                <use href="#rkf-i-linkedin" />
+              </svg></a>
+            <a href="#" class="rkf__social-link rkf__social-link--accent" aria-label="Facebook"><svg class="rkf__ico">
+                <use href="#rkf-i-facebook" />
+              </svg></a>
+            <a href="#" class="rkf__social-link is-active" aria-label="X"><svg class="rkf__ico">
+                <use href="#rkf-i-x" />
+              </svg></a>
+          </div>
+          <span class="rkf__brand-line"></span>
+        </div>
+
+        <div class="rkf__col">
+          <h4 class="rkf__col-title">Quick Links</h4>
+          <ul class="rkf__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="rkf__col" id="rkf-contact">
+          <h4 class="rkf__col-title">Contact Information</h4>
+          <ul class="rkf__contact">
+            <li>
+              <span class="rkf__round"><svg class="rkf__ico">
+                  <use href="#rkf-i-phone" />
+                </svg></span>
+              <div><span>Call Us At</span><a href="tel:+1123456789">01879-807537</a></div>
+            </li>
+            <li>
+              <span class="rkf__round"><svg class="rkf__ico">
+                  <use href="#rkf-i-mail" />
+                </svg></span>
+              <div><span>Email Us</span><a href="mailto:rakibulislam@gmail.com">dev.rakibul37@gmail.com</a></div>
+            </li>
+            <li>
+              <span class="rkf__round"><svg class="rkf__ico">
+                  <use href="#rkf-i-chat" />
+                </svg></span>
+              <div><span>Working Hours</span>
+                <p>Mon - Fri, 9:00 AM - 6:00 PM</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="rkf__col">
+          <h4 class="rkf__col-title">Our Location</h4>
+          <div class="rkf__address">
+            <span class="rkf__round rkf__round--sm"><svg class="rkf__ico">
+                <use href="#rkf-i-pin" />
+              </svg></span>
+            <p>2464 Royal Ln. Mesa,<br>New Jersey 45463</p>
+          </div>
+          <a class="rkf__map" href="https://maps.google.com/?q=2464+Royal+Ln+Mesa+New+Jersey+45463" target="_blank"
+            rel="noopener" aria-label="Open map">
+            <svg class="rkf__map-roads" viewBox="0 0 370 108" preserveAspectRatio="none" aria-hidden="true">
+              <g fill="none" stroke-linecap="round">
+                <path d="M60 -2 L150 110" stroke="#262626" stroke-width="3" />
+                <path d="M82 -2 L172 110" stroke="#1d1d1d" stroke-width="1.5" />
+                <path d="M20 8 L8 110" stroke="#1e1e1e" stroke-width="1.5" />
+                <path d="M170 4 L370 38" stroke="#2c2c2c" stroke-width="1.5" stroke-dasharray="4 3" />
+                <path d="M215 0 L370 70" stroke="#1d1d1d" stroke-width="1.2" />
+                <path d="M110 70 L370 30" stroke="#181818" stroke-width="1.2" />
+                <path d="M260 0 L240 110" stroke="#181818" stroke-width="1.2" />
+              </g>
+            </svg>
+            <span class="rkf__map-pin"><svg class="rkf__ico">
+                <use href="#rkf-i-pin" />
+              </svg></span>
+            <span class="rkf__map-expand"><svg class="rkf__ico">
+                <use href="#rkf-i-expand" />
+              </svg></span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ================= BOTTOM BAR ================= -->
+    <div class="rkf__bar">
+      <div class="rkf__container rkf__bar-inner">
+        <p>© <span data-rkf-year>2026</span> <a href="#">Rakibul Islam</a>. All Rights Reserved.</p>
+        <button class="rkf__totop" type="button" data-rkf-top>
+          <span class="rkf__totop-icon"><svg class="rkf__ico">
+              <use href="#rkf-i-arrow-up" />
+            </svg></span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ FOOTER END ============ -->
+
+  <script src="js/hero.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/lools.js"></script>
+  <script src="js/ecperience.js"></script>
+  <script src="js/project.js"></script> 
+  <script src="js/skill.js"></script>
+  <script src="js/dark-light.js"></script>
+  <script src="js/footer.js"></script>
+
+</body>
+
+</html>

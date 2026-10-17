@@ -1,0 +1,181 @@
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.experience {
+  // @include section-pad;
+  text-align: center;
+
+  // ==============================
+  // SECTION TITLE
+  // ==============================
+
+  h2 {
+    color: var(--heading-color);
+  }
+
+  // ==============================
+  // TABS
+  // ==============================
+
+  .tabs {
+    @include flex(center, center, 0);
+
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+
+    border-radius: $radius-pill;
+    padding: 6px;
+    width: fit-content;
+    margin: 0 auto 40px;
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-color);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 12px 26px;
+      border-radius: $radius-pill;
+      cursor: pointer;
+      transition: $transition;
+
+      &.active {
+        background: $grad-primary;
+        color: #fff;
+      }
+    }
+  }
+
+  // ==============================
+  // EXPERIENCE PANEL
+  // ==============================
+
+  .exp-panel {
+    @include card-panel;
+
+    background: var(--card-bg);
+    border-color: var(--border-color);
+
+    padding: 50px;
+    text-align: left;
+
+    @include mq(md) {
+      padding: 24px;
+    }
+  }
+
+  // ==============================
+  // EXPERIENCE ROW
+  // ==============================
+
+  .exp-row {
+    @include flex(space-between, center, 24px, wrap);
+
+    padding: 26px 0;
+    border-bottom: 1px solid var(--border-color);
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  // ==============================
+  // COMPANY
+  // ==============================
+
+  .exp-company {
+    @include flex(flex-start, center, 16px);
+    flex: 1 1 260px;
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+
+      background: var(--icon-bg);
+      border: 1px solid var(--border-color);
+
+      @include flex(center, center);
+
+      font-size: 20px;
+      color: var(--text-color);
+    }
+
+    h4 {
+      font-size: 17px;
+      margin-bottom: 4px;
+      color: var(--heading-color);
+    }
+
+    span {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  }
+
+  // ==============================
+  // EXPERIENCE ROLE
+  // ==============================
+
+  .exp-role {
+    flex: 1 1 400px;
+
+    h4 {
+      @include flex(flex-start, center, 8px);
+
+      font-size: 16px;
+      margin-bottom: 8px;
+
+      color: var(--heading-color);
+    }
+
+    h4::before {
+      content: '\25CE';
+      color: $color-primary;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+      color: var(--text-color);
+    }
+  }
+
+  // ==============================
+  // CONTENT PANEL DISPLAY SWITCHING
+  // ==============================
+
+  .content-panel {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  // ==============================
+  // RATING
+  // ==============================
+
+  .rating-line {
+    @include flex(center, center, 10px);
+
+    margin-top: 30px;
+    font-size: 14px;
+
+    color: var(--text-color);
+
+    font-weight: 600;
+
+    .stars {
+      font-size: 15px;
+      color: #ffaa00;
+    }
+  }
+}

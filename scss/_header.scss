@@ -1,0 +1,432 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
+/* ==========================================
+   THEME VARIABLES
+   ========================================== */
+
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #ffffff;
+  --heading-color: #ffffff;
+  --card-bg: #111111;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --bt-bg-color: #161616;
+  --header-bg: rgba(10, 10, 10, 0.55);
+  --bt-t-col: #ffffff
+  --bt-br-color: #e6e3e3;
+  --icon-bg: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --heading-color: #111111;
+  --card-bg: #f7f7f7;
+  --border-color: rgba(0, 0, 0, 0.12);
+  --header-bg: rgba(255, 255, 255, 0.75);
+  --bt-t-col: #111111;
+  --bt-bg-color: #F5F5F5;
+  --bt-br-color: #8b8989;
+  --icon-bg: rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==========================================
+   GLOBAL THEME
+   ========================================== */
+
+html {
+  transition: background-color 0.3s ease;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* ==========================================
+   SITE HEADER
+   ========================================== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  padding: 18px 0;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+
+  .header-inner {
+    @include flex(space-between, center);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: $radius-pill;
+    padding: 10px 12px 10px 20px;
+    transition:
+      background 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .logo {
+    @include flex(flex-start, center, 10px);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+
+    .logo-mark {
+      width: 75px;
+      height: 50px;
+      border-radius: 50%;
+
+      @include flex(center, center);
+
+      color: #fff;
+      font-size: 16px;
+    }
+
+    span.dot {
+      color: $color-primary;
+    }
+  }
+
+
+  /* ==========================================
+     MAIN NAV
+     ========================================== */
+
+  .main-nav {
+    @include flex(center, center, 30px);
+
+    @media (max-width: 991px) {
+      display: none !important;
+    }
+
+    a {
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--text-color);
+
+      @include flex(center, center, 4px);
+
+      opacity: 0.9;
+      transition: $transition;
+
+      &:hover {
+        color: $color-primary;
+        opacity: 1;
+      }
+    }
+  }
+
+
+  /* ==========================================
+     HEADER ACTIONS
+     ========================================== */
+
+  .header-actions {
+    @include flex(flex-end, center, 14px);
+  }
+
+
+  /* ==========================================
+     DARK / LIGHT TOGGLE
+     ========================================== */
+
+  .theme-toggle {
+    position: relative;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+
+    background: transparent;
+    color: var(--text-color);
+
+    @include flex(center, center);
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition:
+      background 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      background: $color-primary;
+      color: #fff;
+      border-color: $color-primary;
+      transform: rotate(15deg);
+    }
+
+    .dark-icon {
+      display: none;
+    }
+  }
+
+
+  /* ==========================================
+     LIGHT MODE ICON
+     ========================================== */
+
+  [data-theme="light"] & {
+
+    .theme-toggle {
+
+      .light-icon {
+        display: none;
+      }
+
+      .dark-icon {
+        display: inline-block;
+      }
+    }
+  }
+
+
+  /* ==========================================
+     HEADER CONTACT BUTTON
+     ========================================== */
+
+  .btn-header {
+    @include flex(center, center, 8px);
+
+    background: $grad-primary;
+    color: #fff;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    padding: 10px 8px 10px 20px;
+
+    border-radius: $radius-pill;
+    white-space: nowrap;
+
+    .icon-circle {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+
+      background: rgba(255, 255, 255, 0.22);
+
+      @include flex(center, center);
+
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+
+  /* ==========================================
+     MOBILE NAV TOGGLE
+     ========================================== */
+
+  .nav-toggle {
+    display: none !important;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+
+    background: transparent;
+    color: var(--text-color);
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    @media (max-width: 991px) {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+/* ==========================================
+   MOBILE NAV DRAWER
+   ========================================== */
+
+.mobile-nav {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: var(--bg-color);
+
+  z-index: 99999;
+
+  transform: translateX(100%);
+
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s ease;
+
+  padding: 24px;
+
+  overflow-y: auto;
+
+  box-sizing: border-box;
+
+
+  &.active,
+  &.open {
+    transform: translateX(0) !important;
+  }
+
+
+  /* ==========================================
+     MOBILE NAV TOP
+     ========================================== */
+
+  .mobile-nav-top {
+    @include flex(space-between, center);
+
+    margin-bottom: 40px;
+  }
+
+
+  /* ==========================================
+     MOBILE LOGO
+     ========================================== */
+
+  .logo {
+    color: var(--text-color);
+  }
+
+
+  /* ==========================================
+     CLOSE BUTTON
+     ========================================== */
+
+  .close-btn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--border-color);
+
+    background: transparent;
+    color: var(--text-color);
+
+    font-size: 20px;
+
+    @include flex(center, center);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    &:hover {
+      background: $color-primary;
+      border-color: $color-primary;
+      color: #fff;
+    }
+  }
+
+
+  /* ==========================================
+     MOBILE MENU
+     ========================================== */
+
+  ul {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+
+  a {
+    display: block;
+    padding: 16px 6px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+    transition:
+      color 0.3s ease,
+      border-color 0.3s ease;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+
+  .btn-primary {
+    margin-top: 30px;
+    display: inline-flex;
+    bottom: 72px;
+    right: 26px;
+    padding: 10px 12px;
+  }
+}
+
+
+/* ==========================================
+   TYPING TEXT
+   ========================================== */
+
+.pt {
+
+  .typing-text {
+    display: inline-block;
+
+    margin: 0;
+
+    min-width: 100px;
+
+    white-space: nowrap;
+
+    &::after {
+      content: "|";
+
+      margin-left: 3px;
+
+      animation: blink 0.7s infinite;
+    }
+  }
+}
+
+
+/* ==========================================
+   CURSOR BLINK
+   ========================================== */
+
+@keyframes blink {
+
+  50% {
+    opacity: 0;
+  }
+}
